@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #main_body {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .book_card {
+        border: 1px solid black;
+        width: 13rem;
+        padding: 0.3rem;
+        text-align: center;
+    }
+    img.img_book {
+        max-width: 8rem;
+        max-height: 8rem;
+    }
+</style>
+</head>
+
+<body>
+    <h1 style="text-align: center;"><%=book.title%></h1>
+    <div id="main_body">
+        <div class="book_card">
+            <img class="img_book" src="<%=book.image_path%>" alt="" />
+            <div class="title"><%=book.title%></div>
+            book_id : <%=book.book_id%> <br>
+            Author : <span class="author"><%=book.author%></span><br>
+            Overview : <span class="overview"><%=book.overview%></span>
+        </div>
+    </div>
+</body>
+</html>

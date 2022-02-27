@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update Form</h1>
+    <form action="/update" method="post" enctype="multipart/form-data">
+        Book ID : <input type="text" name="book_id">
+        <br>
+        Field to be Updated: 
+        <select name="field_name" onchange="OptionSelected(event)">
+            <option disabled selected>Field name</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="overview">Overview</option>
+            <option value="image_path">Image</option>
+        </select>
+        <div id="newValueInputDiv" style="display: none;">
+            New Value : 
+            <input type="text" name="newValue" id="newValueInput" >
+        </div>
+        <br>
+        <button type="submit">Update</button>
+    </form>
+
+
+    <div>
+        <a href="/">Go Back to Home</a>
+    </div>
+</body>
+<script>
+    function OptionSelected(event) {
+        if(event.target.value == 'image_path') {
+            document.getElementById('newValueInputDiv').style.display = "block";
+            document.getElementById('newValueInput').type = 'file';
+            document.getElementById('newValueInput').accept = "image/png, image/gif, image/jpeg";
+        }
+        else {
+            document.getElementById('newValueInputDiv').style.display = "block";
+            document.getElementById('newValueInput').type = "text";
+        }
+    }
+</script>
+</html>
