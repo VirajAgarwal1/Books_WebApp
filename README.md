@@ -32,7 +32,7 @@ Admin_Password = "123456"
   <li>Minor modifications like bcrypt will make it much more hackers secure.</li>
   <li>Cookies to make Admin UX not annoying. Instead of logging in again everytim he/she accesses the page cookies 
     will make sire it only he/she will have to login only every 10 minutes.</li>
-  <li>HTTPS instead of HTTP connection making it so that leaking of sensitive information like password/username is not leaked.</li>
+  <li>HTTPS instead of HTTP connection making it so that sensitive information like password/username is not leaked.</li>
   <li>Images can also be added to the Books</li>
   <li>Easy to navigate UI so as to improve productivity and efficiency.</li>
 </ol>
