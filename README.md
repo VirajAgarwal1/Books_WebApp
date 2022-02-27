@@ -16,6 +16,7 @@ ADMIN_NAME=user <br />
 ADMIN_PASS=123456" > .env"</li>
   <li>Now open a new Terminal Windown and start the MongoDB on port 27017(default port) using "mongod" command. </li>
   <li>Now just run the webapp using "node server.js" in the original directory where project folder is.</li>
+  <li>To open the WebApp now go to your browser and type "https://localhost:5000" and then you will see the UI for the WebApp. </li>
 </ol>
 
 <h1>Testing the WebApp</h1>
@@ -24,3 +25,14 @@ To test the WebApp a UI is provided where one can test all the functionalities o
 Admin_Username = "user" <br />
 Admin_Password = "123456"
 </h4>
+
+<h1>Features</h1>
+<ol>
+  <li>Security for Admin's password...</li>
+  <li>Minor modifications like bcrypt will make it much more hackers secure.</li>
+  <li>Cookies to make Admin UX not annoying. Instead of logging in again everytim he/she accesses the page cookies 
+    will make sire it only he/she will have to login only every 10 minutes.</li>
+  <li>HTTPS instead of HTTP connection making it so that leaking of sensitive information like password/username is not leaked.</li>
+  <li>Images can also be added to the Books</li>
+  <li>Easy to navigate UI so as to improve productivity and efficiency.</li>
+</ol>
